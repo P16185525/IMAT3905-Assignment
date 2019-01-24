@@ -1,0 +1,9 @@
+{
+  "GameObjects": [
+      {"name": "pCube1", "modelName": "assets/Models/sphereModel.obj","position": [0,0,-5]},
+	  {"name": "cube2",  "modelName": "assets/Models/cubeModel.obj"  ,"position": [0,2,-5]},
+	  {"name": "cube3",  "modelName": "assets/Models/cubeModel.obj"  ,"position": [0,-2,-5]},
+	  {"name": "cube4",  "modelName": "assets/Models/cubeModel.obj"  ,"position": [2,0,-5]},
+	  {"name": "cube5",  "modelName": "assets/Models/cubeModel.obj"  ,"position": [-2,0,-5]}
+  ]
+}

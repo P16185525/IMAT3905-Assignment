@@ -1,0 +1,5 @@
+map_Kd filenameOfTextureFile filename.bmp
+
+
+
+add to mtl file at the end
