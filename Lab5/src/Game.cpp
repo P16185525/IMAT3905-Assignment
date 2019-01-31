@@ -35,7 +35,7 @@ Game::Game()
 
 void Game::update()
 {
-	
+	//hello
 }
 
 void Game::render()
