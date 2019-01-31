@@ -83,13 +83,13 @@ public:
 		glm::vec3 pos = tc->m_position;
 		glm::quat orient = tc->m_orientation;
 
-		pos += glm::vec3(0, 2, 7) * orient;
+		pos += orient * glm::vec3(0, 2, 7) ;
 
 
 		CameraComponent* cc = getComponent<CameraComponent>();
 
-		cc->m_position = pos;  //!< Copies the tc position and orientation to the camera so that in moves with the player character
-
+		cc->setPosition(pos);  //!< Copies the tc position and orientation to the camera so that in moves with the player character
+		cc->setOrientation(orient);
 	}
 
 

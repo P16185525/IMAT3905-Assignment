@@ -132,7 +132,11 @@ public:
 	void translate(float x, float y, float z) { m_position += glm::vec3(x, y, z); }
 
 	void rotate(float angle, const glm::vec3 &axis) { m_orientation *= glm::angleAxis(angle, axis * m_orientation); }
-	void rotate(float angle, float x, float y, float z) { m_orientation *= glm::angleAxis(angle, glm::vec3(x, y, z) * m_orientation); }
+	void rotate(float angle, float x, float y, float z) 
+	{ 
+		m_orientation *= glm::angleAxis(angle, glm::vec3(x, y, z)); 
+	}  // *m_orientation);
+
 
 	void scaleUp(const glm::vec3 &v) { m_scale += v; }
 	void scaleUp(float x, float y, float z) { m_scale += glm::vec3(x, y, z); }
